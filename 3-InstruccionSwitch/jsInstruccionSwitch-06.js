@@ -42,13 +42,10 @@ function mostrar()
 			alert("Es de noche");
 			break;
 		}
-		default
+		default:
 		{
 			alert("La hora no existe")
 			break;
 		}
 	}
 }//FIN DE LA FUNCIÓN
-
-/*Tira un error en la línea 44 de IntroducciónSwitch-06.html
-Error: mostrar no está definida*/
