@@ -3,10 +3,11 @@ Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
-	var nombre = prompt("Ingrese su nombre", "Nombre");
-	var edad = prompt("Ingrese su edad", "Edad");
+	var nombre;
+	var edad;
 
-	txtIdNombre.value = "Usted se llama " + nombre;
-	txtIdEdad.value = "y tiene " + edad + " años";
+	nombre = document.getElementById("txtIdNombre").value;
+	edad = document.getElementById("txtIdEdad").value;
+
+	alert("Usted se llama " + nombre + " y tiene " + edad + " años");
 }
-
