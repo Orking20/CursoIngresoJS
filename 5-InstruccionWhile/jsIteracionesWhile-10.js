@@ -16,13 +16,56 @@ function mostrar()
 	let respuesta;
 	let numeroIngresado;
 	let sumaNegativos = 0;
+	let sumaPositivos = 0;
+	let contPositivos = 0;
+	let contNegativos = 0;
+	let contCeros = 0;
+	let contPares = 0;
+	let promPositivos;
+	let promNegativos;
+	let diferenciaPosNeg;
 
 	respuesta = "si";
 
 	while(respuesta == "si")
 	{
-		respuesta = prompt("desea continuar?", "si");
+		numeroIngresado = prompt("Ingrese un número.");
+		numeroIngresado = parseInt(numeroIngresado);
+
+		if (numeroIngresado < 0)
+		{
+			sumaNegativos += numeroIngresado;
+			contNegativos++;
+		}
+		else if (numeroIngresado > 0)
+		{
+			sumaPositivos += numeroIngresado;
+			contPositivos++;
+		}
+		else
+		{
+			contCeros++;
+		}
+
+		if (numeroIngresado % 2 == 0)
+		{
+			contPares++;
+		}
+
+		respuesta = prompt("Desea continuar?", "si");
 	}//fin del while
 
-	document.write("la suma de negativos es: " + sumaNegativos);
+	promPositivos = sumaPositivos / contPositivos;
+	promNegativos = sumaNegativos / contNegativos;
+	diferenciaPosNeg = sumaNegativos + sumaPositivos;
+
+	alert("Suma negativos: " + sumaNegativos);
+	alert("Suma positivos: " + sumaPositivos);
+	alert("Cantidad de positivos: " + contPositivos);
+	alert("Cantidad de negativos: " + contNegativos);
+	alert("Cantidad de ceros: " + contCeros);
+	alert("Cantidad de numeros pares: " + contPares);
+	alert("Promedio de positivos: " + promPositivos);
+	alert("Promedio de negativos: " + promNegativos);
+	alert("Diferencia entre negativos y poditivos: " + diferenciaPosNeg);
 }//FIN DE LA FUNCIÓN
