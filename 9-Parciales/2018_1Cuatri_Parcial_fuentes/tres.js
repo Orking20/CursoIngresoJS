@@ -1,8 +1,8 @@
 function mostrar()
 {
-	let precio;
-	let descuento;
-	let precioFinal;
+	var precio;
+	var descuento;
+	var precioFinal;
 
 	precio = prompt("Ingrese el precio.");
 	descuento = prompt("Ingrese el descuento.");

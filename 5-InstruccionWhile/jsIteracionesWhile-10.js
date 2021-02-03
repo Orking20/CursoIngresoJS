@@ -13,17 +13,17 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	let respuesta;
-	let numeroIngresado;
-	let sumaNegativos = 0;
-	let sumaPositivos = 0;
-	let contPositivos = 0;
-	let contNegativos = 0;
-	let contCeros = 0;
-	let contPares = 0;
-	let promPositivos;
-	let promNegativos;
-	let diferenciaPosNeg;
+	var respuesta;
+	var numeroIngresado;
+	var sumaNegativos = 0;
+	var sumaPositivos = 0;
+	var contPositivos = 0;
+	var contNegativos = 0;
+	var contCeros = 0;
+	var contPares = 0;
+	var promPositivos;
+	var promNegativos;
+	var diferenciaPosNeg;
 
 	respuesta = "si";
 

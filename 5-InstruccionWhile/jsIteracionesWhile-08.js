@@ -3,10 +3,10 @@ Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
 function mostrar()
 {
-	let contador;
-	let respuesta;
-	let sumaPositivos;
-	let multiplicacionNegativos;
+	var contador;
+	var respuesta;
+	var sumaPositivos;
+	var multiplicacionNegativos;
 
 	contador = 0;
 	sumaPositivos = 0;

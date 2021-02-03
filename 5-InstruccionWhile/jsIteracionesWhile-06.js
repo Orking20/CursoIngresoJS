@@ -1,8 +1,8 @@
 function mostrar()
 {
-	let contador;
-	let acumulador;
-	let numeroIngresado;
+	var contador;
+	var acumulador;
+	var numeroIngresado;
 
 	contador = 0;
 	acumulador = 0;

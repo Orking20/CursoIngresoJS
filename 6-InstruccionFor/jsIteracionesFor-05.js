@@ -1,7 +1,7 @@
 function mostrar()
 {
-	let numero;
-	let contador;
+	var numero;
+	var contador;
 
 	for (contador = 0; contador != 9; contador = numero)
 	{

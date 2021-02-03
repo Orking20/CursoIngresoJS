@@ -1,8 +1,8 @@
 function mostrar()
 {
-	let numero;
-	let cont;
-	let cantDivisores;
+	var numero;
+	var cont;
+	var cantDivisores;
 
 	numero = prompt("Ingrese un número.");
 

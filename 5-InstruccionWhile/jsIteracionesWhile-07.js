@@ -4,10 +4,10 @@ e informar la suma acumulada y el promedio.
 */
 function mostrar()
 {
-	let contador;
-	let acumulador;
-	let numeroIngresado;
-	let respuesta;
+	var contador;
+	var acumulador;
+	var numeroIngresado;
+	var respuesta;
 
 	contador = 0;
 	acumulador = 0;

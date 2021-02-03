@@ -1,7 +1,7 @@
 function mostrar()
 {
-	let contador;
-	let numero;
+	var contador;
+	var numero;
 
 	numero = prompt("Ingrese un número.");
 

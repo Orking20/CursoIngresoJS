@@ -1,8 +1,8 @@
 function mostrar()
 {
-	let numero;
-	let cont;
-	let primo;
+	var numero;
+	var cont;
+	var primo;
 
 	numero = prompt("Ingrese un número.");
 

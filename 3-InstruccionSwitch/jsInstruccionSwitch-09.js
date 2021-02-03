@@ -3,9 +3,9 @@ function mostrar()
 	var estacionIngresada = txtIdEstacion.value;
 	var destino = txtIdDestino.value;
 	
-	let tarifaBase = 15000
-	let valorModificado;
-	let resultado;
+	var tarifaBase = 15000
+	var valorModificado;
+	var resultado;
 
 	switch (estacionIngresada)
 	{
