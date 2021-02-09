@@ -1,6 +1,5 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
 	var numRandom;
 	numRandom = Math.round(Math.random() * 9 + 1);
 
@@ -16,5 +15,4 @@ function mostrar()
 	{
 		alert("Vamos, la próxima se puede");
 	}
-
 }//FIN DE LA FUNCIÓN
