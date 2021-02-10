@@ -12,5 +12,4 @@ function mostrar()
 	}
 
 	txtIdNumero.value = numeroIngresado;
-	
 }//FIN DE LA FUNCIÓN

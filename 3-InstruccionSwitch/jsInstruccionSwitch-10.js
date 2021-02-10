@@ -80,4 +80,4 @@ function mostrar()
 	}
 }//FIN DE LA FUNCIÓN
 
-//Duda: Si tengo un default al final para poner todos los "No se viaja no me lo toma"
+//Duda: Si tengo un default al final para poner todos los "No se viaja" no me lo toma

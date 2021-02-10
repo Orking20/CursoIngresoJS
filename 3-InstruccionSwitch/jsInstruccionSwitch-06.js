@@ -1,6 +1,5 @@
 function mostrar()
 {
-	//tomo la hora
 	var horaDelDia = txtIdHora.value;
 	
 	switch (horaDelDia)

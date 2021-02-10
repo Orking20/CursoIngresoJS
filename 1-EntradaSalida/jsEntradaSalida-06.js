@@ -6,17 +6,15 @@ function sumar()
 {
 	var numero1;
 	var numero2;
-	var numeroUnoParseado;
-	var numeroDosParseado;
 	var resultado;
 
 	numero1 = document.getElementById("txtIdNumeroUno").value;
 	numero2 = document.getElementById("txtIdNumeroDos").value;
 
-	numeroUnoParseado = parseInt(numero1);
-	numeroDosParseado = parseInt(numero2);
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
 
-	resultado = numeroUnoParseado + numeroDosParseado;
+	resultado = numero1 + numero2;
 
 	alert("La suma es " + resultado);
 }

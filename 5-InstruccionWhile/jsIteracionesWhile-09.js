@@ -9,7 +9,6 @@ function mostrar()
 	var numeroMinimo;
 	var respuesta;
 
-	//iniciar variables
 	banderaDelPrimero = "es el primero";
 	respuesta = 'si';
 

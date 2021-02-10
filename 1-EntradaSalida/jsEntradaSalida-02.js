@@ -9,4 +9,3 @@ function mostrar()
 
 	alert(nombre);
 }
-

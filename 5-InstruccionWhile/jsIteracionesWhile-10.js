@@ -12,7 +12,6 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
 	var respuesta;
 	var numeroIngresado;
 	var sumaNegativos = 0;
@@ -53,7 +52,7 @@ function mostrar()
 		}
 
 		respuesta = prompt("Desea continuar?", "si");
-	}//fin del while
+	}
 
 	promPositivos = sumaPositivos / contPositivos;
 	promNegativos = sumaNegativos / contNegativos;

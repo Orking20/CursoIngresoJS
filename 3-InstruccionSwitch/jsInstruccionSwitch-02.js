@@ -1,6 +1,5 @@
 function mostrar()
 {
-	//tomo el mes
 	var mesDelAño = txtIdMes.value;
 	
 	switch (mesDelAño)
@@ -65,6 +64,5 @@ function mostrar()
 			alert("Ya pasamos el invierno, ahora calor!!!")
 			break;
 		}
-
 	}
 }//FIN DE LA FUNCIÓN
