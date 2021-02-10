@@ -1,7 +1,8 @@
 function mostrar()
 {
-	edad = document.getElementById("txtIdEdad").value;
+	edad;
 
+	edad = document.getElementById("txtIdEdad").value;
 	edad = parseInt(edad);
 
 	if (edad >= 18)

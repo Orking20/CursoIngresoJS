@@ -1,7 +1,12 @@
 function mostrar()
 {
-	var edad = document.getElementById("txtIdEdad").value;
-	var estCivil = document.getElementById("estadoCivil").value;
+	var edad;
+	var estCivil;
+
+	edad = document.getElementById("txtIdEdad").value;
+	estCivil = document.getElementById("estadoCivil").value;
+
+	edad = parseInt(edad);
 
 	if (edad >= 18 && estCivil == "Soltero")
 	{
