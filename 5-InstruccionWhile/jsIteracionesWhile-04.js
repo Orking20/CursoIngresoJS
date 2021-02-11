@@ -11,5 +11,5 @@ function mostrar()
 		numeroIngresado = prompt("Ingrese un número entre 0 y 9.");
 	}
 
-	txtIdNumero.value = numeroIngresado;
+	document.getElementById("txtIdNumero").value = numeroIngresado;
 }//FIN DE LA FUNCIÓN

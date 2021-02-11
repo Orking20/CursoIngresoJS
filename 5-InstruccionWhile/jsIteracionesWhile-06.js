@@ -19,6 +19,6 @@ function mostrar()
 		contador ++;
 	}
 	
-	txtIdSuma.value = acumulador;
-	txtIdPromedio.value = acumulador / 5;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = acumulador / 5;
 }//FIN DE LA FUNCIÓN

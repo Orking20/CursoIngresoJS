@@ -31,6 +31,6 @@ function mostrar()
 		respuesta = prompt("Desea continuar?", "si");
 	}
 
-	txtIdMaximo.value = numeroMaximo;
-	txtIdMinimo.value = numeroMinimo;
+	document.getElementById("txtIdMaximo").value = numeroMaximo;
+	document.getElementById("txtIdMinimo").value = numeroMinimo;
 }//FIN DE LA FUNCIÓN

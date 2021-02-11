@@ -30,6 +30,6 @@ function mostrar()
 		respuesta = prompt("¿Querés ingresar otro número?", "si");
 	}
 	
-	txtIdSuma.value = sumaPositivos;
-	txtIdProducto.value = multiplicacionNegativos;
+	document.getElementById("txtIdSuma").value = sumaPositivos;
+	document.getElementById("txtIdProducto").value = multiplicacionNegativos;
 }//FIN DE LA FUNCIÓN

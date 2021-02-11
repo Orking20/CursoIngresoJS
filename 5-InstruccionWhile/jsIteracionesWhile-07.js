@@ -25,6 +25,6 @@ function mostrar()
 		respuesta = prompt("¿Querés ingresar otro número?", "si");
 	}
 
-	txtIdSuma.value = acumulador;
-	txtIdPromedio.value = acumulador / contador;
+	document.getElementById("txtIdSuma").value = acumulador;
+	document.getElementById("txtIdPromedio").value = acumulador / contador;
 }//FIN DE LA FUNCIÓN
