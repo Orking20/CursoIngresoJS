@@ -14,57 +14,65 @@ function CalcularPrecio ()
 	var marca;
 	var precioConDescuento;
 	var descuento;
+	var porcentaje;
 
 	precioLampara = 35;
 	cantLamparas = document.getElementById("txtIdCantidad").value;
+	cantLamparas = parseInt(cantLamparas);
 	marca = document.getElementById("Marca").value;
 
 	precioLampara = precioLampara * cantLamparas;
 
 	if (cantLamparas >= 6)
 	{
-		descuento = (precioLampara * 50) / 100;
+		porcentaje = 50;
 	}
 	else if (cantLamparas == 5)
 	{
 		if (marca == "ArgentinaLuz")
 		{
-			descuento = (precioLampara * 40) / 100;
+			porcentaje = 40;
 		}
 		else
 		{
-			descuento = (precioLampara * 30) / 100;
+			porcentaje = 30;
 		}
 	}
 	else if (cantLamparas == 4)
 	{
 		if (marca == "ArgentinaLuz" || marca == "FelipeLamparas")
 		{
-			descuento = (precioLampara * 25) / 100;
+			porcentaje = 25;
 		}
 		else
 		{
-			descuento = (precioLampara * 20) / 100;
+			porcentaje = 20;
 		}
 	}
 	else if (cantLamparas == 3)
 	{
 		if (marca == "ArgentinaLuz")
 		{
-			descuento = (precioLampara * 15) / 100;
+			porcentaje = 15;
 		}
 		else if (marca == "FelipeLamparas")
 		{
-			descuento = (precioLampara * 10) / 100;
+			porcentaje = 10;
 		}
 		else
 		{
-			descuento = (precioLampara * 5) / 100;
+			porcentaje = 5;
 		}
 	}
 
+	descuento = (precioLampara * porcentaje) / 100;
 	precioConDescuento = precioLampara - descuento;
 	precioConDescuento = parseInt(precioConDescuento);
+
+	if (cantLamparas <= 2)
+	{
+		precioConDescuento = precioLampara;
+	}
 
 	if (precioConDescuento > 120)
 	{
@@ -72,7 +80,7 @@ function CalcularPrecio ()
 		descuento = (precioConDescuento * 10) / 100;
 		precioConDescuento = precioConDescuento + descuento;
 
-		alert("IIBB Usted pagó " + descuento);
+		alert("IIBB Usted pagó " + descuento + " más");
 	}
 
 	document.getElementById("txtIdprecioDescuento").value = precioConDescuento;

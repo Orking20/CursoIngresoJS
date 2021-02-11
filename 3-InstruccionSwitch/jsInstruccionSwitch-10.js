@@ -1,7 +1,7 @@
 function mostrar()
 {
-	var estacionIngresada = txtIdEstacion.value;
-	var destino = txtIdDestino.value;
+	var estacionIngresada = document.getElementById("txtIdEstacion").value;
+	var destino = document.getElementById("txtIdDestino").value;
 
 	switch (estacionIngresada)
 	{

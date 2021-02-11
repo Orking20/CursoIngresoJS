@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var horaDelDia = txtIdHora.value;
+	var horaDelDia = document.getElementById("txtIdHora").value;
 	
 	switch (horaDelDia)
 	{

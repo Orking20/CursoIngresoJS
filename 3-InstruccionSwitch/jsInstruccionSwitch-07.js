@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var destinoIngresado = txtIdDestino.value;
+	var destinoIngresado = document.getElementById("txtIdDestino").value;
 	
 	switch (destinoIngresado)
 	{
