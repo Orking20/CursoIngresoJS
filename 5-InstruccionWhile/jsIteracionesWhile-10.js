@@ -24,9 +24,7 @@ function mostrar()
 	var promNegativos;
 	var diferenciaPosNeg;
 
-	respuesta = "si";
-
-	while(respuesta == "si")
+	do
 	{
 		numeroIngresado = prompt("Ingrese un número.");
 		numeroIngresado = parseInt(numeroIngresado);
@@ -51,8 +49,8 @@ function mostrar()
 			contPares++;
 		}
 
-		respuesta = prompt("Desea continuar?", "si");
-	}
+		respuesta = confirm("Desea continuar?");
+	}while(respuesta == true);
 
 	promPositivos = sumaPositivos / contPositivos;
 	promNegativos = sumaNegativos / contNegativos;

@@ -12,9 +12,8 @@ function mostrar()
 	contador = 0;
 	acumulador = 0;
 	numeroIngresado = 0;
-	respuesta = "si";
 
-	while (respuesta == "si")
+	do
 	{
 		numeroIngresado = prompt("Ingrese un número");
 		numeroIngresado = parseInt(numeroIngresado);
@@ -22,8 +21,8 @@ function mostrar()
 
 		contador++;
 
-		respuesta = prompt("¿Querés ingresar otro número?", "si");
-	}
+		respuesta = confirm("¿Querés ingresar otro número?");
+	}while (respuesta == true);
 
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / contador;

@@ -18,7 +18,7 @@ function mostrar()
 		acumulador += numeroIngresado;
 		contador ++;
 	}
-	
+
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = acumulador / 5;
 }//FIN DE LA FUNCIÓN

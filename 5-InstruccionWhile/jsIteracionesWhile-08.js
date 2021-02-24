@@ -11,9 +11,8 @@ function mostrar()
 	contador = 0;
 	sumaPositivos = 0;
 	multiplicacionNegativos = 1;
-	respuesta = 'si';
 
-	while (respuesta == "si")
+	do
 	{
 		contador = prompt("Ingrese un número.");
 		contador = parseInt(contador);
@@ -27,8 +26,8 @@ function mostrar()
 			multiplicacionNegativos *= contador;
 		}
 
-		respuesta = prompt("¿Querés ingresar otro número?", "si");
-	}
+		respuesta = confirm("¿Querés ingresar otro número?");
+	}while (respuesta == true)
 	
 	document.getElementById("txtIdSuma").value = sumaPositivos;
 	document.getElementById("txtIdProducto").value = multiplicacionNegativos;

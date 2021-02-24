@@ -6,10 +6,17 @@ function mostrar()
 	var numeroIngresado;
 	numeroIngresado = prompt("Ingrese un número entre 0 y 9.");
 
-	while (numeroIngresado < 0 || numeroIngresado > 9)
+	if(isNaN(numeroIngresado))
 	{
-		numeroIngresado = prompt("Ingrese un número entre 0 y 9.");
+		alert("Esto no es un número");
 	}
+	else
+	{
+		while (numeroIngresado < 0 || numeroIngresado > 9)
+		{
+			numeroIngresado = prompt("Ingrese un número entre 0 y 9.");
+		}
 
-	document.getElementById("txtIdNumero").value = numeroIngresado;
+		document.getElementById("txtIdNumero").value = numeroIngresado;
+	}
 }//FIN DE LA FUNCIÓN
