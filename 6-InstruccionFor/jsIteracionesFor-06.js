@@ -1,12 +1,11 @@
 function mostrar()
 {
-	var contador;
 	var numero;
 
 	numero = prompt("Ingrese un número.");
 
-	for (contador = 2; contador <= numero; contador += 2)
+	for (var i = 2; i <= numero; i += 2)
 	{
-		alert(contador);
+		alert(i);
 	}
 }//FIN DE LA FUNCIÓN

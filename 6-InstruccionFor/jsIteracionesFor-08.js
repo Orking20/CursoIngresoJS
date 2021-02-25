@@ -1,7 +1,6 @@
 function mostrar()
 {
 	var numero;
-	var cont;
 	var primo;
 
 	numero = prompt("Ingrese un número.");
@@ -12,9 +11,9 @@ function mostrar()
 	}
 	else if (numero > 1)
 	{
-		for (cont = 2; cont < numero; cont++)
+		for (var i = 2; i < numero; i++)
 		{
-			if (numero % cont == 0)
+			if (numero % i == 0)
 			{
 				primo = false;
 				break;

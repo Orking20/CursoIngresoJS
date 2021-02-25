@@ -1,6 +1,11 @@
 function mostrar()
 {
-	alert("ok");
+	for(var i = 1; i <= 10; i++)
+	{
+		if(i == 5)
+		{
+			break;
+		}
+		alert(i);
+	}
 }//FIN DE LA FUNCIÓN
-
-// No entiendo el enunciado

@@ -1,9 +1,7 @@
 function mostrar()
 {
-	var contador;
-
-	for (contador = 1; contador <= 10; contador++)
+	for (var i = 1; i <= 10; i++)
 	{
-		alert(contador);
+		alert(i);
 	}
 }

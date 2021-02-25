@@ -1,23 +1,15 @@
 function mostrar()
 {
+	var numeros = [];
+	var numerosIngresados;
 
-	var miArray = new Array();
-
-	for (var i = 0; i <5; i++)
+	for(var i = 1; i <= 10; i++)
 	{
-		miArray[i]=parseInt(prompt("Ingrese un numero"));
+		numerosIngresados = parseInt(prompt("Ingrese un número: "));
+		numeros.push(numerosIngresados);
 	}
-
-
-
-	for(var i=0; i<5; i++)
+	for(var i = 0; i < numeros.length; i++)
 	{
-
-		document.write("Posicion "+i+"-->"+miArray[i]+"<br>");
+		document.write(numeros[i] + "<br>");
 	}
-
-
-
-
-
 }//FIN DE LA FUNCIÓN
